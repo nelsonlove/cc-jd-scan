@@ -6,6 +6,11 @@
 
 set -euo pipefail
 
+if [[ $# -lt 3 ]]; then
+    echo "Usage: split-pdf.sh input.pdf output.pdf <page-spec>" >&2
+    exit 2
+fi
+
 input="$1"
 output="$2"
 spec="$3"

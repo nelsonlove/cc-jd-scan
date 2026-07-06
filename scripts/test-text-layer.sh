@@ -4,7 +4,7 @@
 # Creates an image-only PDF fixture containing known text, runs the Vision
 # text-layer mode, then asserts pdftotext can extract the recognized words.
 #
-# Usage: bash packages/jd-scan/tools/test-text-layer.sh [tools-dir]
+# Usage: bash scripts/test-text-layer.sh [tools-dir]
 #   tools-dir defaults to the directory containing this script.
 
 set -euo pipefail

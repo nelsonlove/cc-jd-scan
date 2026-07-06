@@ -38,7 +38,7 @@
 set -euo pipefail
 
 # ── Defaults ────────────────────────────────────────────────────────────────
-PAPERLESS_URL=""   # resolved below after arg parsing
+PAPERLESS_URL="${PAPERLESS_URL:-}"   # resolved below after arg parsing; preserves inherited env var
 POLL_TIMEOUT=120
 POLL_INTERVAL=2
 
