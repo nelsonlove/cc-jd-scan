@@ -143,6 +143,7 @@ fi
 pl_curl() {
     curl --silent --fail-with-body \
         -H "Authorization: Token $TOKEN" \
+        -H "Accept: application/json; version=9" \
         "$@"
 }
 
